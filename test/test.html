@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>vQ Test</title>
+    <script type="text/javascript" src="../build/vQ.min.js"></script>
+    <!--<script type="text/javascript" src="../dest/vQ.js"></script>-->
+</head>
+<div class="classname">
+		vQ Test
+		<div class="test">
+            this is div
+		</div>
+		<div></div>
+</div>
+<body>
+    <script type="text/javascript">
+		var ele = vQ('.classname'); 
+        vQ.each(vQ,function(key,val){
+            console.log('The vQ has:',key,typeof val);
+        });
+
+        vQ.each(vQ.fn,function(key,val){
+            console.log('The vQ Element has',key,typeof val);
+        });
+
+        vQ(function(){
+            console.log('vQ(fun) can use');
+            ele.each(function(inx,ele){
+                console.log('find The Element:',inx,ele);
+            });
+        });
+
+        vQ.ready(function(){
+            console.log('This is vQ.ready function');
+        });
+
+    </script>
+</body>
+</html>
