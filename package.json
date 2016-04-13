@@ -1,0 +1,47 @@
+{
+  "name": "vQ",
+  "version": "0.1.1",
+  "description": "A simple implementation of Dom Utils Lib like jQuery",
+  "main": "dest/vQ.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "set NODE_ENV=production&&node build",
+    "build:dev": "node build",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vergeplayer/vQ.git"
+  },
+  "keywords": [
+    "vQ",
+    "DOM",
+    "utils"
+  ],
+  "author": "zhengzk",
+  "contributors": [
+    {
+      "name": "Yuan Liang",
+      "email": "yuanliang@me.com",
+      "url": "https://github.com/yuanliang"
+    },
+    {
+      "name": "Zheng ZhiKun",
+      "email": "zhengzk@mail.com",
+      "url": "https://github.com/zhengzk"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vergeplayer/vQ/issues"
+  },
+  "homepage": "https://github.com/vergeplayer/vQ#readme",
+  "devDependencies": {
+    "eslint": "^2.7.0",
+    "eslint-loader": "^1.3.0",
+    "jscs": "^2.11.0",
+    "jscs-loader": "^0.2.0",
+    "loader-utils": "^0.2.13",
+    "webpack": "^1.12.14"
+  }
+}

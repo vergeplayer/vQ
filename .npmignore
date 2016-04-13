@@ -1,0 +1,20 @@
+# IntelliJ project files
+.idea
+*.iml
+# devDependencies
+node_modules
+
+#Source Code
+test
+src
+.eslintrc
+.jscsrc
+
+#Build File
+web_modules
+webpack.config.js
+webpack.dev.config.js
+build.js
+
+# Backup file
+*.bak
